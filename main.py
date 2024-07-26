@@ -121,7 +121,9 @@ running_song = tkinter.Label(down_frame, text = "Choose a song", font=("Ivy 10")
 running_song.place(x=0, y=1)
 
 
-os.chdir(r"C:\Users\Dell\Desktop\Learn To Code\Portfolio\5.MusicPlayer\songs")
+#Wherever you change the songs, put the PATH here:
+songs_path = ""
+os.chdir(songs_path)
 songs = os.listdir()
 
 def show():
